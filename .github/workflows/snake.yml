@@ -1,9 +1,9 @@
 name: generate animation
 
 on:
-  # 每天北京时间早上 8 点运行 (00:00 UTC)
+  # 每周一北京时间早上 5 点运行 (周日 21:00 UTC)
   schedule:
-    - cron: "0 1 * * *" 
+    - cron: "0 21 * * 0" 
   
   # 允许手动触发运行
   workflow_dispatch:
